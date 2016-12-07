@@ -57,7 +57,17 @@ img{
 	font-size: 1.2em;
 	padding: 7px;
 	margin: 0px;
+	font-weight: bold;
 }
+
+.nav_principal ul li a[href="ultimo"]{ /* =, *=, ^=, $=  */
+	background-color: gray;
+	padding-left: 1em;
+	padding-right: 1em;
+	color: purple;
+	font-weight: bold;
+}
+
 .nav_principal ul li a:hover{
 	color: white;
 }
@@ -65,10 +75,13 @@ img{
 /*-----*/
 
 .aside_principal{
-	background-color: yellow;
 	float: left;
+	margin-top: 40px;
 }
 
+.aside_principal blockquote:nth-child(1){ /*even(par), odd(impar)*/
+	color: red;
+}
 
 /*-----*/
 

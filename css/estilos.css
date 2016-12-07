@@ -24,6 +24,36 @@ img{
 	border-radius: 4px;
 }
 
+
+/*-----*/
 .nav_principal{
 	clear: left;
+	position: relative;
+	margin: 4px;
+	/*background-color: red;*/
+	height: 40px;
+	border-bottom: 1px solid gray;
+}
+.nav_principal ul{
+	position: absolute;
+	/*background-color: green;*/
+	margin: 0px;
+	padding: 0px;
+	left: 20px;
+	top:10px;
+}
+.nav_principal ul li{
+	list-style: none;
+	display: inline-block;
+}
+.nav_principal ul li a{
+	text-decoration: none;
+	color: gray;
+	background-color: rgba(0%,0%,100%,.1);
+	font-size: 1.2em;
+	padding: 7px;
+	margin: 0px;
+}
+.nav_principal ul li a:hover{
+	color: white;
 }

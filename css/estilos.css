@@ -1,6 +1,10 @@
 
 body{
+	/*
+	*/
 	background-color: rgba(70%,50%,25%,.4);
+	margin: 0px;
+	padding: 0px;
 }
 
 .header_principal{
@@ -56,4 +60,42 @@ img{
 }
 .nav_principal ul li a:hover{
 	color: white;
+}
+
+/*-----*/
+
+.aside_principal{
+	background-color: yellow;
+	float: left;
+}
+
+
+/*-----*/
+
+.section_principal{
+	margin-left: 250px;
+}
+
+/*-----*/
+
+.footer_principal{
+	background-color: gray;
+	padding: 4px;
+	height: 70px;
+	position: relative;
+	clear: both;
+}
+
+.footer_principal strong{
+	position: absolute;
+	right: 10px;
+	top:20px;
+}
+.footer_principal small{
+	position: absolute;
+	bottom: 2px;
+}
+.footer_principal address{
+	position: absolute;
+	right: 10px;
 }

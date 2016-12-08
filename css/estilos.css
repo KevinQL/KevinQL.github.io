@@ -5,16 +5,18 @@ body{
 	background-color: rgba(70%,50%,25%,.4);
 	margin: 0px;
 	padding: 0px;
+	background: -webkit-linear-gradient(bottom,white,rgba(70%,50%,25%,.8));
+
 }
 
 .header_principal{
 	color: white;
 	height: 250px;
-	background-color: rgba(60%,40%,30%,.5);
+	background-color: rgba(60%,40%,30%,.7);
 	padding: 4px;
 	box-shadow: 3px 5px 4px gray;
 	position: relative;
-
+	font-family: 'Bungee';
 }
 
 header figure{
@@ -22,12 +24,44 @@ header figure{
 	border-radius: 4px;
 	float: left;
 	box-shadow: 2px 2px 4px gray;
+	font-family: sans-serif;
+	color: rgba(0%,10%,10%,.4)
 }
 
 img{
 	border-radius: 4px;
 }
 
+/*fuentes*/
+@font-face {
+  font-family: 'Bungee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bungee Inline'), local('BungeeInline-Regular'), url(https://fonts.gstatic.com/s/bungeeinline/v2/Tb-1914q4rFpjT-F66PLCTxObtw73-qQgbr7Be51v5c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+	font-family: 'mifuente';
+	src: url('BAUHS93.TTF');
+}
+
+/*----*/
+	
+.pruebafuente{
+	font-family: 'Bungee';
+	display: inline-block;
+	/*
+	outline: 2px dashed gray;
+	outline-offset: 12px;
+	-webkit-transform:scale(1,-1);
+	-webkit-transform:rotate(180deg);
+	-webkit-transform:skew(30deg);
+	*/
+}
+.pruebafuente:hover{
+	-webkit-transform:rotate(-5deg);
+}
 
 /*-----*/
 .nav_principal{
@@ -79,8 +113,17 @@ img{
 	margin-top: 40px;
 }
 
-.aside_principal blockquote:nth-child(1){ /*even(par), odd(impar)*/
+.aside_principal blockquote{
+	-webkit-transition: -webkit-transform .4s ease 0.1s;
+}
+
+.aside_principal blockquote:nth-child(1){ /*even(par), odd(impar) / nth, first, last*/
 	color: red;
+	-webkit-transition: -webkit-transform 1s ease 0.5s;
+}
+
+.aside_principal blockquote:hover{
+	-webkit-transform:rotate(-4deg);
 }
 
 /*-----*/
